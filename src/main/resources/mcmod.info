@@ -1,0 +1,16 @@
+[
+{
+  "modid": "tutorial",
+  "name": "Tutorial Mod",
+  "description": "My first mod.",
+  "version": "1.0.0",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["bschwab"],
+  "credits": "The amazing modding community",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": [mod_MinecraftForge]
+}
+]
