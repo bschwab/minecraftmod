@@ -1,5 +1,6 @@
 package com.bryan.tut.client;
 
+import com.bryan.tut.init.TutorialItems;
 import com.bryan.tut.proxy.serverP;
 
 import net.minecraftforge.fml.common.Mod;
@@ -17,12 +18,13 @@ public class Main {
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
-		
+		TutorialItems.init();
+		TutorialItems.register();
 	}
 	
 	@EventHandler
 	public void Init(FMLInitializationEvent event) {
-		
+		proxy.registerRenders();
 	}
 	
 	@EventHandler
@@ -34,5 +36,4 @@ public class Main {
 	public void serverLoad(FMLServerStartingEvent event) {
 		
 	}
-	
 }
