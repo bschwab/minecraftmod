@@ -1,5 +1,6 @@
 package com.bryan.tut.client;
 
+import com.bryan.tut.init.TutorialBlocks;
 import com.bryan.tut.init.TutorialItems;
 import com.bryan.tut.proxy.serverP;
 
@@ -20,6 +21,7 @@ public class Main {
 	public void preInit(FMLPreInitializationEvent event) {
 		TutorialItems.init();
 		TutorialItems.register();
+		TutorialBlocks.init();
 	}
 	
 	@EventHandler

@@ -1,5 +1,30 @@
 package com.bryan.tut.init;
 
-public class TutorialBlocks {
+import com.bryan.tut.client.Variables;
 
+import com.bryan.tut.blocks.ObsidianBlock;
+
+import net.minecraft.block.Block;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.item.Item;
+
+public class TutorialBlocks {
+	
+	public static ObsidianBlock obsidian_Block;
+
+	public static void init() {
+		obsidian_Block = new ObsidianBlock();
+		obsidian_Block.setUnlocalizedName("obsidian_Block");
+	}
+	
+	public static void registerRenders() {
+		registerRender(obsidian_Block);
+	}
+	
+	public static void registerRender(Block block) {
+		Item item = Item.getItemFromBlock(block);
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Variables.MOD_ID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
+
+	}
 }
