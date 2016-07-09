@@ -7,11 +7,11 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class ObsidianBlock extends Block {
+public class obsidianBlock extends Block {
 
-	public ObsidianBlock() {
+	public obsidianBlock() {
 		super(Material.GLASS);
-		setRegistryName("Obsidian_Block");
+		setRegistryName("obsidian_Block");
 		GameRegistry.register(this);
 		GameRegistry.register(new ItemBlock(this), getRegistryName());
 		this.setCreativeTab(CreativeTabs.MISC);

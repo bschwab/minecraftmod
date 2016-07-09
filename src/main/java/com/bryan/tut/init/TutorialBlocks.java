@@ -2,7 +2,7 @@ package com.bryan.tut.init;
 
 import com.bryan.tut.client.Variables;
 
-import com.bryan.tut.blocks.ObsidianBlock;
+import com.bryan.tut.blocks.obsidianBlock;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
@@ -11,10 +11,10 @@ import net.minecraft.item.Item;
 
 public class TutorialBlocks {
 	
-	public static ObsidianBlock obsidian_Block;
+	public static obsidianBlock obsidian_Block;
 
 	public static void init() {
-		obsidian_Block = new ObsidianBlock();
+		obsidian_Block = new obsidianBlock();
 		obsidian_Block.setUnlocalizedName("obsidian_Block");
 	}
 	
