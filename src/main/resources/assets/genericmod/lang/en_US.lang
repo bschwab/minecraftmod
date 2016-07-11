@@ -1,3 +1,4 @@
 < en_US.lang - English localization file for this mod >
 item.obsidianShard.name=Obsidian Shard
 tile.obsidian_Block.name=Obsidian Block
+itemGroup.tutTab=My Tab
