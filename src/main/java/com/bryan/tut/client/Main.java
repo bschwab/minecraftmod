@@ -1,5 +1,6 @@
 package com.bryan.tut.client;
 
+import com.bryan.tut.init.CraftingManager;
 import com.bryan.tut.init.TutorialBlocks;
 import com.bryan.tut.init.TutorialFood;
 import com.bryan.tut.init.TutorialItems;
@@ -25,6 +26,7 @@ public class Main {
 		TutorialBlocks.init();
 		TutorialFood.init();
 		TutorialFood.register();
+		CraftingManager.register();
 	}
 	
 	@EventHandler
