@@ -1,6 +1,7 @@
 package com.bryan.tut.client;
 
 import com.bryan.tut.init.TutorialBlocks;
+import com.bryan.tut.init.TutorialFood;
 import com.bryan.tut.init.TutorialItems;
 import com.bryan.tut.proxy.serverP;
 
@@ -22,6 +23,8 @@ public class Main {
 		TutorialItems.init();
 		TutorialItems.register();
 		TutorialBlocks.init();
+		TutorialFood.init();
+		TutorialFood.register();
 	}
 	
 	@EventHandler
