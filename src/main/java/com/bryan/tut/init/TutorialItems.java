@@ -13,7 +13,7 @@ public class TutorialItems {
 	public static Item obsidianShard;
 	
 	public static void init() {
-		obsidianShard = new Item().setCreativeTab(CreativeTabs.MISC).setMaxStackSize(64).setUnlocalizedName("obsidianShard");
+		obsidianShard = new Item().setCreativeTab(TutorialTabs.tutTab).setMaxStackSize(64).setUnlocalizedName("obsidianShard");
 	}
 	
 	public static void register() {

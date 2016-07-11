@@ -1,5 +1,7 @@
 package com.bryan.tut.blocks;
 
+import com.bryan.tut.init.TutorialTabs;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -14,7 +16,7 @@ public class obsidianBlock extends Block {
 		setRegistryName("obsidian_Block");
 		GameRegistry.register(this);
 		GameRegistry.register(new ItemBlock(this), getRegistryName());
-		this.setCreativeTab(CreativeTabs.MISC);
+		this.setCreativeTab(TutorialTabs.tutTab);
 		this.setHardness(0.3f);
 		this.setLightLevel(0.93f);
 		this.setLightOpacity(16);
